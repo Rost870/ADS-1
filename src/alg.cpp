@@ -6,7 +6,7 @@
 bool checkPrime(uint64_t value) {
   uint64_t count=0;
   for(uint64_t i=1;i<=value;i++){
-    if(value%i==0){
+    if(value%i==0 && value!=0){
       count+=1;
     }
   }
